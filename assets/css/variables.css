@@ -1,0 +1,105 @@
+/* ==========================================================================
+   SUPERSENTER — DESIGN SYSTEM VARIABLES
+   Brand: SUPERSENTER (supersenter.com)
+   Palette: Dark Stealth (#080A0D) + Electric Yellow Accent (#FFE600) + Off-White (#F5F7F8)
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Primary Dark */
+  --color-bg-deep: #050709;
+  --color-bg-primary: #080A0D;
+  --color-bg-surface: #11151A;
+  --color-bg-card: #151A22;
+  --color-bg-card-hover: #1C232E;
+  --color-bg-elevated: #202733;
+
+  /* Borders & Dividers */
+  --color-border: #1E2530;
+  --color-border-subtle: #181F28;
+  --color-border-hover: #2E3848;
+  --color-border-accent: rgba(255, 230, 0, 0.35);
+
+  /* Secondary & Typography */
+  --color-text-title: #FFFFFF;
+  --color-text-primary: #F5F7F8;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #8492A6;
+  --color-text-dim: #546073;
+
+  /* Accent - Flashlight Electric Yellow */
+  --color-accent-yellow: #FFE600;
+  --color-accent-yellow-hover: #FFF04D;
+  --color-accent-yellow-dark: #E5CF00;
+  --color-accent-glow: rgba(255, 230, 0, 0.28);
+  --color-accent-subtle: rgba(255, 230, 0, 0.08);
+
+  /* Conversion - WhatsApp Official */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #1EBE5B;
+  --color-whatsapp-dark: #128C7E;
+  --color-whatsapp-glow: rgba(37, 211, 102, 0.35);
+  --color-whatsapp-subtle: rgba(37, 211, 102, 0.12);
+
+  /* Functional Badges */
+  --badge-best-seller: #FFE600;
+  --badge-popular: #FF6B00;
+  --badge-recommended: #00D2FF;
+  --badge-new: #10B981;
+
+  /* Typography */
+  --font-family-base: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Responsive Fluid Font Sizes */
+  --font-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);      /* 12 - 13px */
+  --font-sm: clamp(0.8125rem, 0.77rem + 0.3vw, 0.875rem);     /* 13 - 14px */
+  --font-base: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);        /* 15 - 16px */
+  --font-md: clamp(1.0625rem, 1rem + 0.3vw, 1.125rem);        /* 17 - 18px */
+  --font-lg: clamp(1.1875rem, 1.1rem + 0.5vw, 1.3125rem);     /* 19 - 21px */
+  --font-xl: clamp(1.375rem, 1.25rem + 0.8vw, 1.625rem);      /* 22 - 26px */
+  --font-2xl: clamp(1.75rem, 1.5rem + 1.2vw, 2.125rem);       /* 28 - 34px */
+  --font-3xl: clamp(2.25rem, 1.85rem + 1.8vw, 2.875rem);      /* 36 - 46px */
+  --font-4xl: clamp(2.75rem, 2.2rem + 2.5vw, 3.75rem);        /* 44 - 60px */
+  --font-hero: clamp(2.5rem, 2rem + 3.5vw, 4.25rem);          /* 40 - 68px */
+
+  /* Spacing */
+  --spacing-xxs: 0.25rem;  /* 4px */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 0.75rem;   /* 12px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4.5rem;   /* 72px */
+  --spacing-4xl: 6rem;     /* 96px */
+
+  /* Layout Widths */
+  --container-max: 1240px;
+  --container-narrow: 920px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows & Glows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.7);
+  --shadow-card: 0 8px 28px rgba(0, 0, 0, 0.45);
+  --glow-yellow: 0 0 24px rgba(255, 230, 0, 0.28);
+  --glow-yellow-sm: 0 0 12px rgba(255, 230, 0, 0.35);
+  --glow-yellow-lg: 0 0 48px rgba(255, 230, 0, 0.32);
+  --glow-whatsapp: 0 0 24px rgba(37, 211, 102, 0.35);
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Sticky Header Heights */
+  --header-height: 76px;
+}

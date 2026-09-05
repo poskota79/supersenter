@@ -1,71 +1,922 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supersenter</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERSENTER — Senter Berkualitas untuk Outdoor, Diving &amp; Fishing</title>
+  <meta name="description" content="Temukan senter kepala, senter selam, senter terang, dan senter memancing berkualitas di SUPERSENTER. Pilih senter sesuai kebutuhan Anda dan konsultasikan pembelian melalui WhatsApp.">
+  <meta name="keywords" content="senter outdoor, senter kepala, headlamp, senter selam, diving flashlight, senter terang, senter jarak jauh, senter memancing, SUPERSENTER">
+  <meta name="author" content="SUPERSENTER">
+
+  <!-- Open Graph / Meta Medsos -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supersenter.com/">
+  <meta property="og:title" content="SUPERSENTER — Senter Berkualitas untuk Outdoor, Diving &amp; Fishing">
+  <meta property="og:description" content="Penerangan powerful, water resistant, dan tahan lama untuk petualangan tanpa batas. Konsultasi langsung via WhatsApp.">
+  <meta property="og:image" content="assets/images/hero/hero-flashlight.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Supersenter</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+  <!-- =========================================================================
+       1. HEADER / STICKY NAVBAR
+       ========================================================================= -->
+  <header class="header-site" role="banner">
+    <div class="container">
+      <div class="navbar-inner">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" aria-label="SUPERSENTER Beranda">
+          <div class="logo-beam-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <span class="logo-text">SUPER<span>SENTER</span></span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu" role="navigation" aria-label="Menu Utama">
+          <a href="index.html" class="nav-link is-active">Home</a>
+          <a href="produk.html" class="nav-link">Produk</a>
+          <a href="senter-kepala.html" class="nav-link">Senter Kepala</a>
+          <a href="senter-selam.html" class="nav-link">Senter Selam</a>
+          <a href="senter-terang.html" class="nav-link">Senter Terang</a>
+          <a href="senter-memancing.html" class="nav-link">Senter Memancing</a>
+          <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
         </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Supersenter</h1>
-                <p>Your go-to destination for excellence</p>
-                <a href="#contact" class="cta-button">Get Started</a>
+        <!-- Right Action Button -->
+        <div class="nav-actions">
+          <a href="https://wa.me/628388140200" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.42-.099.825zm-3.423-10.416c-4.991 0-9.039 4.048-9.039 9.04 0 1.62.43 3.138 1.177 4.457l-1.238 4.524 4.653-1.221c1.283.702 2.752 1.1 4.447 1.1 4.991 0 9.039-4.049 9.039-9.04 0-4.991-4.048-9.04-9.039-9.04z"/>
+            </svg>
+            BELI VIA WHATSAPP
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button type="button" class="btn-mobile-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" aria-label="Menu Navigasi Mobile">
+    <a href="index.html" class="mobile-nav-link is-active">Home <span>→</span></a>
+    <a href="produk.html" class="mobile-nav-link">Semua Produk <span>→</span></a>
+    <a href="senter-kepala.html" class="mobile-nav-link">Senter Kepala (Headlamp) <span>→</span></a>
+    <a href="senter-selam.html" class="mobile-nav-link">Senter Selam (Diving) <span>→</span></a>
+    <a href="senter-terang.html" class="mobile-nav-link">Senter Terang (High Power) <span>→</span></a>
+    <a href="senter-memancing.html" class="mobile-nav-link">Senter Memancing (Fishing) <span>→</span></a>
+    <a href="tentang-kami.html" class="mobile-nav-link">Tentang Kami <span>→</span></a>
+    <a href="faq.html" class="mobile-nav-link">Pertanyaan Umum (FAQ) <span>→</span></a>
+    <a href="kontak.html" class="mobile-nav-link">Hubungi Kami <span>→</span></a>
+
+    <div class="mobile-nav-actions">
+      <a href="https://wa.me/628388140200" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+        BELI VIA WHATSAPP (0838-8140200)
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-bg-wrapper">
+        <img src="assets/images/hero/hero-flashlight.jpg" alt="Sorotan Cahaya Senter Taktis SUPERSENTER di Alam Liar Malam Hari" class="hero-bg-image">
+        <div class="hero-overlay-radial"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>PROFESSIONAL GRADE FLASHLIGHT</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            TERANG LEBIH JAUH.
+            <span class="highlight">PETUALANGAN TANPA BATAS.</span>
+          </h1>
+
+          <p class="hero-description">
+            Temukan senter berkualitas untuk setiap kondisi — dari aktivitas outdoor, diving, memancing, hingga kebutuhan sehari-hari.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#kategori" class="btn btn-primary btn-lg">
+              LIHAT PRODUK
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/628388140200" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.42-.099.825zm-3.423-10.416c-4.991 0-9.039 4.048-9.039 9.04 0 1.62.43 3.138 1.177 4.457l-1.238 4.524 4.653-1.221c1.283.702 2.752 1.1 4.447 1.1 4.991 0 9.039-4.049 9.039-9.04 0-4.991-4.048-9.04-9.039-9.04z"/>
+              </svg>
+              BELI VIA WHATSAPP
+            </a>
+          </div>
+
+          <div class="hero-trust-list">
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Produk pilihan berkualitas</span>
             </div>
-        </section>
-
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>We deliver exceptional services with a focus on quality, innovation, and customer satisfaction. Our team is dedicated to helping you achieve your goals.</p>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Cocok untuk outdoor &amp; aktivitas malam</span>
             </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Service One</h3>
-                        <p>High-quality service designed to meet your needs</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Service Two</h3>
-                        <p>Expert solutions tailored to your requirements</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Service Three</h3>
-                        <p>Innovative approaches to drive your success</p>
-                    </div>
-                </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Konsultasi produk ramah via WhatsApp</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Get in Touch</h2>
-                <p>Have questions? We'd love to hear from you.</p>
-                <a href="mailto:contact@supersenter.com" class="cta-button">Contact Us</a>
+    <!-- =======================================================================
+         3. TRUST / VALUE BAR (4 PILARS)
+         ======================================================================= -->
+    <section class="trust-bar-section" aria-label="Keunggulan SUPERSENTER">
+      <div class="container">
+        <div class="trust-bar-grid">
+          <div class="trust-bar-item">
+            <div class="trust-icon-box">⚡</div>
+            <div class="trust-text-box">
+              <h4>HIGH POWER</h4>
+              <p>Penerangan powerful untuk berbagai kebutuhan</p>
             </div>
-        </section>
-    </main>
+          </div>
 
-    <footer>
-        <p>&copy; 2026 Supersenter. All rights reserved.</p>
-    </footer>
+          <div class="trust-bar-item">
+            <div class="trust-icon-box">💧</div>
+            <div class="trust-text-box">
+              <h4>WATER RESISTANT</h4>
+              <p>Pilihan produk untuk kondisi outdoor &amp; basah</p>
+            </div>
+          </div>
+
+          <div class="trust-bar-item">
+            <div class="trust-icon-box">🔋</div>
+            <div class="trust-text-box">
+              <h4>LONG LASTING</h4>
+              <p>Dirancang untuk penggunaan yang tahan lama</p>
+            </div>
+          </div>
+
+          <div class="trust-bar-item">
+            <div class="trust-icon-box">🛡️</div>
+            <div class="trust-text-box">
+              <h4>QUALITY SELECTED</h4>
+              <p>Produk dipilih berdasarkan kualitas dan fungsi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. PRODUCT CATEGORY SECTION
+         ======================================================================= -->
+    <section id="kategori" class="section-padding" aria-labelledby="cat-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">KATEGORI PRODUK</span>
+          <h2 id="cat-heading" class="section-title">TEMUKAN SENTER YANG SESUAI KEBUTUHANMU</h2>
+          <p class="section-subtitle">
+            Dirancang untuk berbagai aktivitas. Pilih jenis senter yang paling sesuai dengan kebutuhan Anda.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <!-- 01 Senter Kepala -->
+          <a href="senter-kepala.html" class="category-card" aria-label="Lihat Kategori Senter Kepala">
+            <div class="category-card-bg">
+              <img src="assets/images/categories/cat-headlamp.jpg" alt="Pendaki menggunakan Senter Kepala Headlamp SUPERSENTER di Malam Hari" loading="lazy">
+            </div>
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-card-number">01 — SENTER KEPALA</span>
+              <h3 class="category-card-title">Senter Kepala (Headlamp)</h3>
+              <p class="category-card-desc">
+                Hands-free lighting untuk hiking, camping, kerja, dan aktivitas malam.
+              </p>
+              <span class="category-card-cta">LIHAT SENTER KEPALA →</span>
+            </div>
+          </a>
+
+          <!-- 02 Senter Selam -->
+          <a href="senter-selam.html" class="category-card" aria-label="Lihat Kategori Senter Selam">
+            <div class="category-card-bg">
+              <img src="assets/images/categories/cat-diving.jpg" alt="Penyelam menggunakan Senter Selam SUPERSENTER di Bawah Laut" loading="lazy">
+            </div>
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-card-number">02 — SENTER SELAM</span>
+              <h3 class="category-card-title">Senter Selam (Diving)</h3>
+              <p class="category-card-desc">
+                Dirancang untuk menerangi dunia bawah air dengan segel kedap tekanan tinggi.
+              </p>
+              <span class="category-card-cta">LIHAT SENTER SELAM →</span>
+            </div>
+          </a>
+
+          <!-- 03 Senter Terang -->
+          <a href="senter-terang.html" class="category-card" aria-label="Lihat Kategori Senter Terang">
+            <div class="category-card-bg">
+              <img src="assets/images/categories/cat-highpower.jpg" alt="Sorotan Senter Terang High Power SUPERSENTER Jarak Jauh Menembus Langit Malam" loading="lazy">
+            </div>
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-card-number">03 — SENTER TERANG</span>
+              <h3 class="category-card-title">Senter Terang (High Power)</h3>
+              <p class="category-card-desc">
+                Powerful illumination untuk jarak jauh dan area luas. Tembus kegelapan pekat.
+              </p>
+              <span class="category-card-cta">LIHAT SENTER TERANG →</span>
+            </div>
+          </a>
+
+          <!-- 04 Senter Memancing -->
+          <a href="senter-memancing.html" class="category-card" aria-label="Lihat Kategori Senter Memancing">
+            <div class="category-card-bg">
+              <img src="assets/images/categories/cat-fishing.jpg" alt="Pemancing Malam menggunakan Senter Memancing SUPERSENTER" loading="lazy">
+            </div>
+            <div class="category-card-overlay"></div>
+            <div class="category-card-content">
+              <span class="category-card-number">04 — SENTER MEMANCING</span>
+              <h3 class="category-card-title">Senter Memancing (Fishing)</h3>
+              <p class="category-card-desc">
+                Teman terbaik untuk memancing dan aktivitas malam dengan baterai tahan lama.
+              </p>
+              <span class="category-card-cta">LIHAT SENTER MEMANCING →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. FEATURED PRODUCTS SECTION
+         ======================================================================= -->
+    <section class="section-padding" style="background-color: var(--color-bg-surface);" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">KOLEKSI UNGGULAN</span>
+          <h2 id="featured-heading" class="section-title">PRODUK PILIHAN SUPERSENTER</h2>
+          <p class="section-subtitle">
+            Pilihan senter yang kami rekomendasikan untuk kebutuhan outdoor dan aktivitas malam.
+          </p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Card 1: SUPERSENTER X1 -->
+          <article class="product-card">
+            <span class="product-card-badge badge-best-seller">BEST SELLER</span>
+            <a href="produk-detail.html?id=supersenter-x1" class="product-card-thumb">
+              <img src="assets/images/products/supersenter-x1.jpg" alt="Senter Taktis SUPERSENTER X1 High Power" loading="lazy">
+            </a>
+            <div class="product-card-body">
+              <span class="product-card-category">Senter Terang</span>
+              <h3 class="product-card-title">
+                <a href="produk-detail.html?id=supersenter-x1">SUPERSENTER X1</a>
+              </h3>
+              <p class="product-card-desc">High Power Tactical Flashlight bertenaga tinggi untuk jangkauan sorotan ekstra jauh.</p>
+              <div class="product-card-price-row">
+                <span class="product-card-price">Rp 389.000</span>
+                <span class="product-card-old-price">Rp 499.000</span>
+              </div>
+              <div class="product-card-actions">
+                <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20tertarik%20dengan%20produk%20SUPERSENTER%20X1.%20Bisa%20info%20harga%20dan%20detail%20produknya%3F" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  BELI VIA WHATSAPP
+                </a>
+                <a href="produk-detail.html?id=supersenter-x1" class="btn btn-outline btn-sm">
+                  DETAIL PRODUK
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: SUPERSENTER HEAD PRO -->
+          <article class="product-card">
+            <span class="product-card-badge badge-popular">POPULAR</span>
+            <a href="produk-detail.html?id=supersenter-head-pro" class="product-card-thumb">
+              <img src="assets/images/products/supersenter-head-pro.jpg" alt="Senter Kepala SUPERSENTER HEAD PRO Rechargeable LED Headlamp" loading="lazy">
+            </a>
+            <div class="product-card-body">
+              <span class="product-card-category">Senter Kepala</span>
+              <h3 class="product-card-title">
+                <a href="produk-detail.html?id=supersenter-head-pro">SUPERSENTER HEAD PRO</a>
+              </h3>
+              <p class="product-card-desc">Rechargeable LED Headlamp ergonomis hands-free untuk hiking, camping, dan pekerjaan malam.</p>
+              <div class="product-card-price-row">
+                <span class="product-card-price">Rp 279.000</span>
+                <span class="product-card-old-price">Rp 350.000</span>
+              </div>
+              <div class="product-card-actions">
+                <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20tertarik%20dengan%20produk%20SUPERSENTER%20HEAD%20PRO.%20Bisa%20info%20harga%20dan%20detail%20produknya%3F" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  BELI VIA WHATSAPP
+                </a>
+                <a href="produk-detail.html?id=supersenter-head-pro" class="btn btn-outline btn-sm">
+                  DETAIL PRODUK
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: SUPERSENTER DIVE X -->
+          <article class="product-card">
+            <span class="product-card-badge badge-recommended">RECOMMENDED</span>
+            <a href="produk-detail.html?id=supersenter-dive-x" class="product-card-thumb">
+              <img src="assets/images/products/supersenter-dive-x.jpg" alt="Senter Selam SUPERSENTER DIVE X Professional Diving Flashlight" loading="lazy">
+            </a>
+            <div class="product-card-body">
+              <span class="product-card-category">Senter Selam</span>
+              <h3 class="product-card-title">
+                <a href="produk-detail.html?id=supersenter-dive-x">SUPERSENTER DIVE X</a>
+              </h3>
+              <p class="product-card-desc">Professional Diving Flashlight tahan tekanan air tinggi untuk eksplorasi bawah laut yang jernih.</p>
+              <div class="product-card-price-row">
+                <span class="product-card-price">Rp 549.000</span>
+                <span class="product-card-old-price">Rp 699.000</span>
+              </div>
+              <div class="product-card-actions">
+                <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20tertarik%20dengan%20produk%20SUPERSENTER%20DIVE%20X.%20Bisa%20info%20harga%20dan%20detail%20produknya%3F" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  BELI VIA WHATSAPP
+                </a>
+                <a href="produk-detail.html?id=supersenter-dive-x" class="btn btn-outline btn-sm">
+                  DETAIL PRODUK
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: SUPERSENTER FISHER PRO -->
+          <article class="product-card">
+            <span class="product-card-badge badge-new">NEW</span>
+            <a href="produk-detail.html?id=supersenter-fisher-pro" class="product-card-thumb">
+              <img src="assets/images/products/supersenter-fisher-pro.jpg" alt="Senter Memancing SUPERSENTER FISHER PRO Outdoor Flashlight" loading="lazy">
+            </a>
+            <div class="product-card-body">
+              <span class="product-card-category">Senter Memancing</span>
+              <h3 class="product-card-title">
+                <a href="produk-detail.html?id=supersenter-fisher-pro">SUPERSENTER FISHER PRO</a>
+              </h3>
+              <p class="product-card-desc">Fishing &amp; Outdoor Flashlight dengan daya tahan baterai super lama untuk menemanimu semalaman.</p>
+              <div class="product-card-price-row">
+                <span class="product-card-price">Rp 329.000</span>
+                <span class="product-card-old-price">Rp 420.000</span>
+              </div>
+              <div class="product-card-actions">
+                <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20tertarik%20dengan%20produk%20SUPERSENTER%20FISHER%20PRO.%20Bisa%20info%20harga%20dan%20detail%20produknya%3F" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  BELI VIA WHATSAPP
+                </a>
+                <a href="produk-detail.html?id=supersenter-fisher-pro" class="btn btn-outline btn-sm">
+                  DETAIL PRODUK
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="produk.html" class="btn btn-outline btn-lg">
+            LIHAT SEMUA KOLEKSI SENTER →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. WHY SUPERSENTER
+         ======================================================================= -->
+    <section class="section-padding" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">BRAND PROMISE</span>
+          <h2 id="why-heading" class="section-title">KENAPA SUPERSENTER?</h2>
+          <p class="section-subtitle">
+            Dedikasi kami adalah menghadirkan alat penerangan yang siap diandalkan di segala situasi ekstrem.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">✓</div>
+            <h3 class="feature-title">PRODUK PILIHAN</h3>
+            <p class="feature-desc">
+              Kami memilih produk berdasarkan fungsi, kualitas, dan kebutuhan pengguna nyata di lapangan.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">🎯</div>
+            <h3 class="feature-title">FOKUS PADA PENERANGAN</h3>
+            <p class="feature-desc">
+              Kami fokus pada produk flashlight sehingga customer lebih mudah menemukan produk yang benar-benar sesuai.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">🌲</div>
+            <h3 class="feature-title">UNTUK BERBAGAI AKTIVITAS</h3>
+            <p class="feature-desc">
+              Outdoor, camping, diving, memancing, pekerjaan, maupun penggunaan sehari-hari dengan standar proteksi tinggi.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">💬</div>
+            <h3 class="feature-title">KONSULTASI MUDAH</h3>
+            <p class="feature-desc">
+              Tidak yakin memilih produk? Hubungi kami langsung melalui WhatsApp untuk saran produk yang tepat dan cepat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. USE CASE SECTION ("SATU SENTER. BANYAK PETUALANGAN.")
+         ======================================================================= -->
+    <section class="section-padding" style="background-color: var(--color-bg-surface);" aria-labelledby="usecase-heading">
+      <div class="container">
+        <div class="usecase-layout">
+          <div class="usecase-editorial">
+            <span class="section-tag">PETUALANGAN MALAM</span>
+            <h2 id="usecase-heading" class="section-title" style="font-size: var(--font-3xl); margin-bottom: 1.25rem;">
+              SATU SENTER.<br>BANYAK PETUALANGAN.
+            </h2>
+            <p>
+              "Ketika matahari terbenam, perjalanan tidak harus berhenti."
+            </p>
+            <p style="color: var(--color-text-muted);">
+              SUPERSENTER hadir untuk membantu Anda tetap melihat, menjelajah, dan beraktivitas bahkan ketika cahaya alami sudah tidak tersedia. Dari puncak gunung berkabut hingga kedalaman terumbu karang laut.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20ingin%20konsultasi%20senter%20untuk%20aktivitas%20outdoor." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                KONSULTASIKAN AKTIVITASMU VIA WA
+              </a>
+            </div>
+          </div>
+
+          <div class="usecase-grid">
+            <div class="usecase-card">
+              <span class="usecase-icon-emoji">🏕️</span>
+              <h4>CAMPING</h4>
+              <p>Menerangi area camp, memasak malam, hingga navigasi sekitar tenda dengan aman.</p>
+            </div>
+
+            <div class="usecase-card">
+              <span class="usecase-icon-emoji">⛰️</span>
+              <h4>HIKING</h4>
+              <p>Sorotan tajam menembus kabut dan jalur bebatuan terjal tanpa membebani tangan.</p>
+            </div>
+
+            <div class="usecase-card">
+              <span class="usecase-icon-emoji">🤿</span>
+              <h4>DIVING</h4>
+              <p>Proteksi segel kedap air bertekanan tinggi untuk eksplorasi jernih di bawah air.</p>
+            </div>
+
+            <div class="usecase-card">
+              <span class="usecase-icon-emoji">🎣</span>
+              <h4>FISHING</h4>
+              <p>Cahaya fokus ramah permukaan air dengan ketahanan baterai untuk semalaman.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. COMPARISON / PRODUCT FINDER (INTERACTIVE QUIZ)
+         ======================================================================= -->
+    <section class="section-padding" aria-labelledby="finder-heading">
+      <div class="container container-narrow">
+        <div class="section-header text-center">
+          <span class="section-tag">PANDUAN PEMILIHAN</span>
+          <h2 id="finder-heading" class="section-title">BUTUH BANTUAN MEMILIH SENTER?</h2>
+          <p class="section-subtitle">
+            Klik jenis aktivitas utama Anda di bawah ini untuk mendapatkan rekomendasi senter yang paling pas.
+          </p>
+        </div>
+
+        <div class="finder-wrapper">
+          <h3 class="finder-question-title">"Untuk aktivitas apa kamu membutuhkan senter?"</h3>
+
+          <div class="finder-options-grid">
+            <button type="button" class="finder-option-btn is-active" data-activity="camping">
+              <span class="finder-option-icon">🏕️</span>
+              <span>Camping / Hiking</span>
+            </button>
+
+            <button type="button" class="finder-option-btn" data-activity="diving">
+              <span class="finder-option-icon">🤿</span>
+              <span>Diving / Air</span>
+            </button>
+
+            <button type="button" class="finder-option-btn" data-activity="memancing">
+              <span class="finder-option-icon">🎣</span>
+              <span>Memancing</span>
+            </button>
+
+            <button type="button" class="finder-option-btn" data-activity="jarak-jauh">
+              <span class="finder-option-icon">⚡</span>
+              <span>Penerangan Jauh</span>
+            </button>
+
+            <button type="button" class="finder-option-btn" data-activity="pekerjaan">
+              <span class="finder-option-icon">🔧</span>
+              <span>Pekerjaan / Bengkel</span>
+            </button>
+
+            <button type="button" class="finder-option-btn" data-activity="sehari-hari">
+              <span class="finder-option-icon">🏠</span>
+              <span>Penggunaan Harian</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Result Box -->
+          <div id="finderResult" class="finder-result-box">
+            <div class="finder-result-text">
+              <h4>💡 Rekomendasi: Senter Kepala (Headlamp)</h4>
+              <p>Senter Kepala adalah pilihan terbaik untuk aktivitas hands-free saat mendaki dan memasak. Pilihan unggulan: <strong>SUPERSENTER HEAD PRO</strong>.</p>
+            </div>
+            <div class="finder-result-actions">
+              <a href="senter-kepala.html" class="btn btn-primary btn-sm">
+                LIHAT REKOMENDASI →
+              </a>
+              <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20butuh%20rekomendasi%20senter%20untuk%20Camping%20dan%20Hiking." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                KONSULTASI DI WHATSAPP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. TESTIMONIAL SECTION
+         ======================================================================= -->
+    <section class="section-padding" style="background-color: var(--color-bg-surface);" aria-labelledby="testi-heading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ULASAN PENGGUNA</span>
+          <h2 id="testi-heading" class="section-title">APA KATA MEREKA?</h2>
+          <p class="section-subtitle">
+            Pengalaman nyata pengguna yang mempercayakan pencahayaan malamnya pada SUPERSENTER.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="Rating 5 dari 5 bintang">★★★★★</div>
+              <p class="testimonial-quote">
+                "Terangnya jauh lebih kuat dari senter biasa. Sorotannya fokus banget dan nembus kabut waktu naik Gunung Prau. Cocok banget untuk camping malam."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div class="testimonial-info">
+                <h5>Andi</h5>
+                <p>Jakarta • Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="Rating 5 dari 5 bintang">★★★★★</div>
+              <p class="testimonial-quote">
+                "Build quality terasa solid dan praktis dipakai. Finishing anodized-nya rapi, enak digenggam dan tidak licin waktu basah kehujanan."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">R</div>
+              <div class="testimonial-info">
+                <h5>Rizky</h5>
+                <p>Bandung • Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars" aria-label="Rating 5 dari 5 bintang">★★★★★</div>
+              <p class="testimonial-quote">
+                "Untuk mancing malam sangat membantu. Cahayanya stabil di permukaan air dan baterainya awet banget dipakai dari maghrib sampai subuh."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">D</div>
+              <div class="testimonial-info">
+                <h5>Dimas</h5>
+                <p>Bekasi • Verified Buyer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="testimonial-disclaimer">
+          *Catatan: Ulasan di atas merupakan testimoni representatif pelanggan SUPERSENTER untuk ilustrasi kepuasan produk.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. FAQ ACCORDION SECTION
+         ======================================================================= -->
+    <section class="section-padding" aria-labelledby="faq-heading">
+      <div class="container container-narrow">
+        <div class="section-header text-center">
+          <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 id="faq-heading" class="section-title">PERTANYAAN YANG SERING DIAJUKAN</h2>
+          <p class="section-subtitle">
+            Informasi praktis seputar fitur produk, spesifikasi, dan prosedur pemesanan senter di SUPERSENTER.
+          </p>
+        </div>
+
+        <div class="faq-accordion-container">
+          <!-- Question 1 -->
+          <div class="faq-item is-open">
+            <button type="button" class="faq-question-btn" aria-expanded="true">
+              <span>Apakah semua produk rechargeable?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Sebagian besar lini produk utama SUPERSENTER telah mendukung sistem baterai isi ulang (rechargeable) yang praktis via kabel USB. Untuk tipe baterai spesifik dan kapasitas cadangan per model, silakan hubungi tim SUPERSENTER melalui WhatsApp untuk informasi terbaru mengenai produk ini.</p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Apakah tersedia senter tahan air?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Ya, lini senter outdoor SUPERSENTER dirancang dengan ketahanan terhadap cipratan air dan cuaca lembap (water-resistant). Khusus untuk kategori Senter Selam (Diving), produk dibekali segel ganda bertekanan tinggi untuk penggunaan menyelam di bawah air.</p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Senter mana yang cocok untuk camping?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Untuk camping dan trekking, kami sangat menyarankan <strong>Senter Kepala (Headlamp) SUPERSENTER HEAD PRO</strong> karena memungkinkan kedua tangan Anda bebas bergerak untuk mendirikan tenda, memasak, atau berjalan di malam hari.</p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Senter mana yang cocok untuk diving?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Untuk aktivitas menyelam atau underwater exploration, gunakan <strong>SUPERSENTER DIVE X</strong> yang memang diproduksi secara khusus dengan switch magnetik anti bocor dan proteksi korosi air laut.</p>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Bagaimana cara membeli?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Sangat mudah! Cukup klik tombol <strong>"BELI VIA WHATSAPP"</strong> di halaman produk atau navbar. Anda akan langsung terhubung dengan Customer Service resmi kami di nomor <strong>0838-8140200</strong> untuk konfirmasi stok, metode pembayaran, dan pengiriman.</p>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Apakah bisa konsultasi sebelum membeli?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Tentu saja! Tim SUPERSENTER siap membantu Anda menemukan senter yang paling cocok dengan medan atau aktivitas Anda tanpa biaya konsultasi apapun.</p>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Bagaimana cara mengetahui harga produk?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Harga resmi dan promo tertera pada masing-masing kartu produk di website ini. Untuk informasi promo bundling atau diskon grosir, silakan hubungi tim SUPERSENTER melalui WhatsApp untuk informasi terbaru mengenai produk ini.</p>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Apakah produk bergaransi?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <p>Setiap unit melalui proses QC (Quality Control) sebelum dikirim ke pelanggan. Silakan hubungi tim SUPERSENTER melalui WhatsApp untuk informasi terbaru mengenai ketentuan garansi dan layanan purna jual produk ini.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. FINAL PRE-FOOTER CALL TO ACTION
+         ======================================================================= -->
+    <section class="final-cta-section" aria-labelledby="cta-heading">
+      <div class="final-cta-glow"></div>
+      <div class="container">
+        <div class="final-cta-content">
+          <span class="section-tag">MULAI PETUALANGANMU</span>
+          <h2 id="cta-heading" class="final-cta-title">SIAP MENERANGI PETUALANGANMU?</h2>
+          <p class="final-cta-desc">
+            Temukan senter yang tepat untuk kebutuhanmu. Konsultasikan pilihan produk langsung dengan tim kami sekarang juga.
+          </p>
+          <a href="https://wa.me/628388140200?text=Halo%20SUPERSENTER%2C%20saya%20siap%20order%20senter.%20Bisa%20bantu%20pilihkan%20produk%20terbaik%3F" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.42-.099.825zm-3.423-10.416c-4.991 0-9.039 4.048-9.039 9.04 0 1.62.43 3.138 1.177 4.457l-1.238 4.524 4.653-1.221c1.283.702 2.752 1.1 4.447 1.1 4.991 0 9.039-4.049 9.039-9.04 0-4.991-4.048-9.04-9.039-9.04z"/>
+            </svg>
+            BELI VIA WHATSAPP (0838-8140200)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       12. FOOTER
+       ========================================================================= -->
+  <footer class="footer-site" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="logo-beam-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <span class="logo-text">SUPER<span>SENTER</span></span>
+          </a>
+          <p>
+            Senter berkualitas untuk menerangi setiap aktivitas dan petualangan. Penerangan bertenaga tinggi, tahan cuaca, dan andal di segala kondisi malam.
+          </p>
+          <span style="font-size: var(--font-xs); color: var(--color-accent-yellow); font-weight: 700;">
+            OFFICIAL STORE • supersenter.com
+          </span>
+        </div>
+
+        <!-- Col 2: Kategori Produk -->
+        <div>
+          <h4 class="footer-heading">Produk</h4>
+          <ul class="footer-links">
+            <li><a href="produk.html" class="footer-link">Semua Produk</a></li>
+            <li><a href="senter-kepala.html" class="footer-link">Senter Kepala</a></li>
+            <li><a href="senter-selam.html" class="footer-link">Senter Selam</a></li>
+            <li><a href="senter-terang.html" class="footer-link">Senter Terang</a></li>
+            <li><a href="senter-memancing.html" class="footer-link">Senter Memancing</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company & Information -->
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="tentang-kami.html" class="footer-link">Tentang Kami</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ &amp; Bantuan</a></li>
+            <li><a href="kontak.html" class="footer-link">Kontak &amp; Lokasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Box -->
+        <div>
+          <h4 class="footer-heading">Hubungi Kami</h4>
+          <div class="footer-contact-card">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <div>
+                <strong>WhatsApp CS:</strong><br>
+                <a href="https://wa.me/628388140200" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-yellow); font-weight: 700;">
+                  0838-8140200
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <div>
+                <strong>Website:</strong><br>
+                <span>supersenter.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <strong>Lokasi Toko:</strong><br>
+                <a href="https://share.google/KKaNF1L4Yz8fQzmoQ" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent-yellow); font-weight: 700;">Buka di Google Maps &#8599;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2026</span> SUPERSENTER. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="tentang-kami.html">Tentang Brand</a>
+          <a href="faq.html">Bantuan</a>
+          <a href="kontak.html">WhatsApp Order</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       13. FLOATING WHATSAPP CTA
+       ========================================================================= -->
+  <a href="https://wa.me/628388140200" class="floating-wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Hubungi SUPERSENTER melalui WhatsApp">
+    <div class="floating-wa-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.42-.099.825zm-3.423-10.416c-4.991 0-9.039 4.048-9.039 9.04 0 1.62.43 3.138 1.177 4.457l-1.238 4.524 4.653-1.221c1.283.702 2.752 1.1 4.447 1.1 4.991 0 9.039-4.049 9.039-9.04 0-4.991-4.048-9.04-9.039-9.04z"/>
+      </svg>
+    </div>
+    <span>Chat SUPERSENTER</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/product-finder.js"></script>
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

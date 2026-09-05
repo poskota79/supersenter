@@ -1,0 +1,709 @@
+/* ==========================================================================
+   SUPERSENTER — PAGES STYLESHEET
+   Brand: SUPERSENTER (supersenter.com)
+   Page-specific styles for Product Detail, Catalog, Categories, About, Contact
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. PAGE HEADER / BANNER
+   -------------------------------------------------------------------------- */
+.page-banner {
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: 3.5rem;
+  background: linear-gradient(180deg, #0C1016 0%, var(--color-bg-primary) 100%);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 200px;
+  background: radial-gradient(ellipse, rgba(255, 230, 0, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-accent-yellow);
+}
+
+.breadcrumbs span {
+  color: var(--color-text-dim);
+}
+
+.page-banner-title {
+  font-size: var(--font-3xl);
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+}
+
+.page-banner-desc {
+  font-size: var(--font-md);
+  color: var(--color-text-secondary);
+  max-width: 650px;
+}
+
+/* --------------------------------------------------------------------------
+   2. PRODUCT CATALOG / FILTER BAR
+   -------------------------------------------------------------------------- */
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.catalog-filter-pills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-pill {
+  padding: 0.5rem 1.15rem;
+  font-size: var(--font-xs);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-pill:hover {
+  border-color: rgba(255, 230, 0, 0.4);
+  color: #FFFFFF;
+}
+
+.filter-pill.is-active {
+  background: var(--color-accent-yellow);
+  color: #080A0D;
+  border-color: var(--color-accent-yellow);
+  box-shadow: 0 0 12px rgba(255, 230, 0, 0.25);
+}
+
+.catalog-counter {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   3. PRODUCT DETAIL PAGE
+   -------------------------------------------------------------------------- */
+.product-detail-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* Gallery Left */
+.product-gallery {
+  position: sticky;
+  top: calc(var(--header-height) + 2rem);
+}
+
+.product-gallery-main {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #0D1016;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.product-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.product-gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.gallery-thumb-btn {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+  background: #0E1218;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  padding: 0;
+}
+
+.gallery-thumb-btn:hover {
+  border-color: rgba(255, 230, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+.gallery-thumb-btn.is-active {
+  border-color: var(--color-accent-yellow);
+  box-shadow: 0 0 10px rgba(255, 230, 0, 0.3);
+}
+
+.gallery-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product Info Right */
+.product-info-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-detail-category {
+  font-size: var(--font-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-accent-yellow);
+  letter-spacing: 0.08em;
+}
+
+.product-detail-title {
+  font-size: var(--font-3xl);
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  line-height: 1.15;
+}
+
+.product-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.product-stars {
+  display: flex;
+  gap: 0.2rem;
+  color: var(--color-accent-yellow);
+  font-size: 0.95rem;
+}
+
+.product-rating-text {
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.product-detail-price-box {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.detail-price-current {
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.detail-price-old {
+  font-size: var(--font-base);
+  color: var(--color-text-dim);
+  text-decoration: line-through;
+}
+
+.detail-price-tag {
+  margin-left: auto;
+  font-size: var(--font-xs);
+  font-weight: 700;
+  color: var(--color-accent-yellow);
+  background: rgba(255, 230, 0, 0.1);
+  border: 1px solid rgba(255, 230, 0, 0.25);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.product-detail-lead {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+/* Feature Checklist */
+.product-features-box {
+  margin-bottom: 2rem;
+}
+
+.product-features-box h4 {
+  font-size: var(--font-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin-bottom: 0.85rem;
+}
+
+.feature-check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.feature-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+}
+
+.feature-check-item svg {
+  color: var(--color-accent-yellow);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Big WhatsApp Purchase CTA */
+.product-cta-container {
+  margin-bottom: 2.5rem;
+}
+
+.product-wa-cta-btn {
+  width: 100%;
+  padding: 1.15rem 1.5rem;
+  font-size: var(--font-base);
+  font-weight: 800;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: var(--color-whatsapp);
+  color: #FFFFFF;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.product-wa-cta-btn:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+  color: #FFFFFF;
+}
+
+.product-cta-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.85rem;
+  font-size: var(--font-xs);
+  color: var(--color-text-muted);
+}
+
+/* Specs & What's In The Box Tables */
+.product-detail-sections {
+  margin-top: 3.5rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 3rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.specs-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.specs-card h3 {
+  font-size: var(--font-lg);
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specs-table tr {
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.specs-table tr:last-child {
+  border-bottom: none;
+}
+
+.specs-table td {
+  padding: 0.85rem 0;
+  font-size: var(--font-sm);
+}
+
+.specs-table td.spec-label {
+  color: var(--color-text-muted);
+  width: 45%;
+  font-weight: 500;
+}
+
+.specs-table td.spec-val {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: right;
+}
+
+.box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.box-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  background: var(--color-bg-surface);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-subtle);
+}
+
+.box-item svg {
+  color: var(--color-accent-yellow);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. ABOUT PAGE STYLES
+   -------------------------------------------------------------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text h3 {
+  font-size: var(--font-2xl);
+  margin-bottom: 1.25rem;
+  color: #FFFFFF;
+}
+
+.about-text p {
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.about-image-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-image-card img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   5. CONTACT PAGE STYLES
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+}
+
+.contact-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+}
+
+.contact-wa-direct {
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.12) 0%, rgba(18, 140, 126, 0.12) 100%);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-wa-number {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin: 0.75rem 0 1.25rem 0;
+  letter-spacing: 0.04em;
+}
+
+/* --------------------------------------------------------------------------
+   6. RESPONSIVE QUERIES FOR PAGES
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .product-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .product-gallery {
+    position: static;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-banner {
+    padding-top: calc(var(--header-height) + 1.25rem);
+    padding-bottom: 2.25rem;
+  }
+
+  .page-banner-title {
+    font-size: 1.75rem;
+    line-height: 1.15;
+  }
+
+  .page-banner-desc {
+    font-size: 0.875rem;
+    line-height: 1.55;
+  }
+
+  .catalog-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .catalog-filter-pills {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .catalog-filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-pill {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    min-height: 38px;
+  }
+
+  .product-detail-layout {
+    gap: 1.75rem;
+  }
+
+  .product-gallery-main {
+    border-radius: var(--radius-lg);
+  }
+
+  .product-gallery-thumbs {
+    gap: 0.5rem;
+  }
+
+  .product-detail-title {
+    font-size: 1.85rem;
+    line-height: 1.15;
+  }
+
+  .product-detail-price-box {
+    padding: 1rem 1.15rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .detail-price-current {
+    font-size: 1.65rem;
+  }
+
+  .product-wa-cta-btn {
+    padding: 1rem 1.25rem;
+    min-height: 52px;
+    font-size: 0.95rem;
+  }
+
+  .product-cta-trust {
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+
+  .product-detail-sections {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .specs-card {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .specs-table td {
+    font-size: 0.8125rem;
+    padding: 0.7rem 0;
+  }
+
+  .specs-table td.spec-label {
+    width: 50%;
+  }
+
+  .box-item {
+    font-size: 0.8125rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .about-image-card img {
+    height: 280px;
+  }
+
+  .contact-card {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .contact-wa-direct {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-wa-number {
+    font-size: 1.45rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. STICKY MOBILE BUY BAR (PRODUCT DETAIL ONLY)
+   -------------------------------------------------------------------------- */
+.mobile-sticky-action-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-sticky-action-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 990;
+    background: rgba(8, 10, 13, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--color-border);
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom)) 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.85rem;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.7);
+  }
+
+  .mobile-bar-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-bar-label {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  .mobile-bar-price {
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 1.1;
+  }
+
+  .mobile-bar-btn {
+    flex: 1;
+    max-width: 220px;
+    min-height: 44px;
+    font-size: 0.8125rem;
+    padding: 0.65rem 1rem;
+  }
+
+  body.has-mobile-bottom-bar {
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)) !important;
+  }
+
+  body.has-mobile-bottom-bar .floating-wa-btn {
+    bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  }
+}
+
