@@ -534,8 +534,8 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center right;
-  opacity: 0.42;
-  filter: contrast(1.15) brightness(0.9);
+  opacity: 0.7;
+  filter: contrast(1.15) brightness(1.0);
 }
 
 .hero-overlay-radial {
@@ -782,7 +782,7 @@ button {
   }
 
   .hero-bg-image {
-    opacity: 0.28;
+    opacity: 0.45;
     object-position: center;
   }
 
