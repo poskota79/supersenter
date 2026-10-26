@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
       message: 'Senter Selam dengan segel ganda bertekanan tinggi adalah keharusan mutlak untuk visibilitas optimal di bawah air.',
       recommendedSlug: 'senter-selam',
       recommendedUrl: 'senter-selam.html',
-      featuredProduct: 'SUPERSENTER DIVE X',
       waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk aktivitas Diving / Bawah Air. Produk apa yang paling cocok?'
     },
     'tangan': {
