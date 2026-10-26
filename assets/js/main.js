@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       catalogGrid.innerHTML = filtered.map(p => `
         <div class="product-card">
           <span class="product-card-badge badge-${p.badgeType}">${p.badge}</span>
-          <a href="produk-detail.html?id=${p.slug}" class="product-card-thumb">
+          <a href="${p.detailPage || 'produk-detail.html?id=' + p.slug}" class="product-card-thumb">
             <img src="${p.image}" alt="${p.alt}" loading="lazy">
           </a>
           <div class="product-card-body">
             <span class="product-card-category">${p.category}</span>
-            <h3 class="product-card-title"><a href="produk-detail.html?id=${p.slug}">${p.name}</a></h3>
+            <h3 class="product-card-title"><a href="${p.detailPage || 'produk-detail.html?id=' + p.slug}">${p.name}</a></h3>
             <p class="product-card-desc">${p.shortDescription}</p>
             <div class="product-card-price-row">
               <span class="product-card-price">${p.price}</span>
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <a href="${window.SUPERSENTER.config.getProductWaUrl(p.name)}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
                 BELI VIA WHATSAPP
               </a>
-              <a href="produk-detail.html?id=${p.slug}" class="btn btn-outline btn-sm">
+              <a href="${p.detailPage || 'produk-detail.html?id=' + p.slug}" class="btn btn-outline btn-sm">
                 DETAIL PRODUK
               </a>
             </div>
