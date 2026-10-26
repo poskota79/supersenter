@@ -135,56 +135,7 @@ const SUPERSENTER_PRODUCTS = [
       "1x Buku Panduan Penggunaan & Garansi Layanan"
     ]
   },
-  {
-    id: "supersenter-head-pro",
-    slug: "supersenter-head-pro",
-    name: "SUPERSENTER HEAD PRO",
-    tagline: "Rechargeable LED Headlamp",
-    category: "Senter Kepala",
-    categorySlug: "senter-kepala",
-    categoryUrl: "senter-kepala.html",
-    badge: "POPULAR",
-    badgeType: "popular",
-    price: "Rp 279.000",
-    oldPrice: "Rp 350.000",
-    image: "assets/images/products/supersenter-head-pro.jpg",
-    gallery: [
-      "assets/images/products/supersenter-head-pro.jpg",
-      "assets/images/categories/cat-headlamp.jpg",
-      "assets/images/hero/hero-flashlight.jpg"
-    ],
-    alt: "Senter Kepala Headlamp SUPERSENTER HEAD PRO",
-    rating: {
-      score: "4.9",
-      reviewsCount: 64
-    },
-    shortDescription: "Senter kepala ergonomis bertenaga dengan strap elastis nyaman. Pilihan hands-free terbaik untuk hiking, camping, dan pekerjaan teknis.",
-    fullDescription: "Bebaskan kedua tangan Anda untuk mendaki gunung, memasang tenda, memperbaiki mesin, atau bersepeda malam. SUPERSENTER HEAD PRO menghadirkan distribusi bobot yang seimbang dengan headband bernapas (breathable) yang tidak menekan kepala. Sudut kemiringan lampu dapat disesuaikan hingga 60 derajat untuk mengarahkan cahaya tepat pada pijakan atau area kerja Anda.",
-    keyFeatures: [
-      "Desain hands-free ergonomis dengan distribusi berat optimal",
-      "Strap kepala elastis berkualitas tinggi yang dapat disesuaikan",
-      "Sudut tilt lampu fleksibel hingga 60 derajat",
-      "Dua pilihan mode sorotan: fokus jarak jauh & sebaran jarak dekat",
-      "Baterai isi ulang hemat energi dengan indikator level daya",
-      "Tahan terhadap cipratan air hujan dan debu outdoor"
-    ],
-    specifications: [
-      { label: "Kategori Produk", value: "Senter Kepala / Headlamp" },
-      { label: "Kode Model", value: "SS-HP-PRO" },
-      { label: "Sistem Daya", value: "Rechargeable Lithium Battery" },
-      { label: "Pengaturan Sudut", value: "Multi-Angle Tilt Mechanism (60°)" },
-      { label: "Material Headband", value: "Washable Elastic Breathable Strap" },
-      { label: "Ketahanan Cuaca", value: "Splash Proof Weather Seal" },
-      { label: "Rekomendasi Pakai", value: "Hiking, Camping, Trail Run, Mekanik, Pekerjaan Malam" },
-      { label: "Status Ketersediaan", value: "Ready Stock — Konsultasi via WhatsApp" }
-    ],
-    included: [
-      "1x Unit SUPERSENTER HEAD PRO",
-      "1x Premium Elastic Headband",
-      "1x Kabel Pengisian Daya USB",
-      "1x Petunjuk Penggunaan & Konsultasi"
-    ]
-  },
+  
   {
     id: "supersenter-dive-x",
     slug: "supersenter-dive-x",

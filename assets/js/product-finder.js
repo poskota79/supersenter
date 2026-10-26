@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       message: 'Senter Kepala adalah pilihan terbaik untuk aktivitas hands-free saat mendaki, mendirikan tenda, dan memasak di alam bebas.',
       recommendedSlug: 'senter-kepala',
       recommendedUrl: 'senter-kepala.html',
-      featuredProduct: 'SUPERSENTER HEAD PRO',
       waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk aktivitas Camping / Hiking. Produk apa yang paling cocok?'
     },
     'diving': {
@@ -47,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
       message: 'Kombinasi fleksibilitas hands-free dan bodi tahan banting sangat ideal untuk kebutuhan perbengkelan, teknisi, dan proyek malam.',
       recommendedSlug: 'senter-kepala',
       recommendedUrl: 'senter-kepala.html',
-      featuredProduct: 'SUPERSENTER HEAD PRO',
       waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk kebutuhan pekerjaan malam / teknisi.'
     },
     'sehari-hari': {
@@ -79,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultBox.innerHTML = `
           <div class="finder-result-text">
             <h4>💡 Rekomendasi: ${rec.categoryName}</h4>
-            <p>${rec.message} Pilihan unggulan: <strong>${rec.featuredProduct}</strong>.</p>
+            <p>${rec.message}${rec.featuredProduct ? ` Pilihan unggulan: <strong>${rec.featuredProduct}</strong>.` : ''}</p>
           </div>
           <div class="finder-result-actions">
             <a href="${rec.recommendedUrl}" class="btn btn-primary btn-sm">
