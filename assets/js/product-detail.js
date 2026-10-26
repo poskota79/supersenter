@@ -150,6 +150,29 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
+  // Peringatan baterai tidak termasuk (produk tanpa baterai di paket penjualan)
+  const BATTERY_REQUIRED = {
+    'nitecore-tangan-p10-v2': '1x baterai 18650 atau 2x baterai CR123',
+    'taffled-dive-g300': '1x baterai 18650',
+    'taffled-dive-l2': '1x baterai 18650 atau 1x baterai 26650',
+    'taffled-dive-p70': '3x baterai AAA, 1x baterai 18650, atau 1x baterai 26650',
+    'taffled-he08': '3x baterai AAA',
+    'taffled-he25': '3x baterai AAA',
+    'taffled-tangan-p50': '1x baterai 26650, 1x baterai 18650, atau 3x baterai AAA',
+    'taffled-uv-395-9led': '3x baterai AAA',
+    'taffled-uv-t118': '1x baterai 18650 atau 3x baterai AAA',
+    'taffled-w30': '3x baterai AAA'
+  };
+  const batteryNote = BATTERY_REQUIRED[product.slug];
+  document.querySelectorAll('.battery-warning').forEach(el => el.remove());
+  if (boxListEl && batteryNote) {
+    const warn = document.createElement('p');
+    warn.className = 'battery-warning';
+    warn.style.cssText = 'margin-top: 1.25rem; padding: 0.9rem 1.1rem; background: rgba(255, 230, 0, 0.08); border: 1px solid rgba(255, 230, 0, 0.35); border-radius: 0.75rem; color: #FFE600; font-size: var(--font-sm); font-weight: 700; line-height: 1.6;';
+    warn.innerHTML = '\u26a0\ufe0f Perhatian: Produk ini belum termasuk baterai dalam paket penjualan. Baterai yang dibutuhkan: <span style="color: #FFFFFF;">' + batteryNote + '</span> (dibeli terpisah).';
+    boxListEl.insertAdjacentElement('afterend', warn);
+  }
+
   // Render Related Products
   const relatedGrid = document.getElementById('relatedProductsGrid');
   if (relatedGrid) {
