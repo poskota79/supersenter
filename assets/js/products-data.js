@@ -86,57 +86,6 @@ const SUPERSENTER_CATEGORIES = [
 
 const SUPERSENTER_PRODUCTS = [
   {
-    id: "supersenter-dive-x",
-    slug: "supersenter-dive-x",
-    name: "SUPERSENTER DIVE X",
-    tagline: "Professional Diving Flashlight",
-    category: "Senter Selam",
-    categorySlug: "senter-selam",
-    categoryUrl: "senter-selam.html",
-    badge: "RECOMMENDED",
-    badgeType: "recommended",
-    price: "Rp 549.000",
-    oldPrice: "Rp 699.000",
-    image: "assets/images/products/supersenter-dive-x.jpg",
-    gallery: [
-      "assets/images/products/supersenter-dive-x.jpg",
-      "assets/images/categories/cat-diving.jpg",
-      "assets/images/hero/hero-flashlight.jpg"
-    ],
-    alt: "Senter Selam Menyelam SUPERSENTER DIVE X",
-    rating: {
-      score: "5.0",
-      reviewsCount: 42
-    },
-    shortDescription: "Senter selam profesional dengan proteksi segel ganda bertekanan tinggi untuk menerangi keindahan bawah laut dengan kejernihan maksimal.",
-    fullDescription: "Menjelajahi dunia bawah air membutuhkan senter yang tidak hanya terang, tetapi juga memiliki keandalan mutlak dalam menahan tekanan air. SUPERSENTER DIVE X dibekali sistem insulasi O-ring ganda serta magnetic switch yang aman dari rembesan air laut. Sorotan optik khusus dirancang untuk menembus partikel air keruh dan merefleksikan warna terumbu karang secara natural.",
-    keyFeatures: [
-      "Proteksi kedap air ganda dirancang untuk penyelaman",
-      "Switch magnetik anti-bocor yang mudah dioperasikan dengan sarung tangan",
-      "Beam penetrasi tinggi untuk kejernihan di air tawar maupun laut",
-      "Lapisan anti-korosi tahan terhadap paparan garam air laut",
-      "Dilengkapi wrist lanyard tebal untuk keamanan penyelam",
-      "Kaca tempered anti-pecah berdaya tahan tekanan tinggi"
-    ],
-    specifications: [
-      { label: "Kategori Produk", value: "Senter Selam / Diving Flashlight" },
-      { label: "Kode Model", value: "SS-DX-MARIN" },
-      { label: "Tipe Switch", value: "Magnetic Slide / Rotary Switch" },
-      { label: "Segel Kedap Air", value: "Dual High-Pressure O-Ring System" },
-      { label: "Material Bodi", value: "Marine-Grade Corrosion Resistant Alloy" },
-      { label: "Tipe Lensa", value: "Toughened Ultra-Clear Glass Lens" },
-      { label: "Rekomendasi Pakai", value: "Scuba Diving, Snorkeling, Spear Fishing, Cave Diving" },
-      { label: "Status Ketersediaan", value: "Ready Stock — Konsultasi via WhatsApp" }
-    ],
-    included: [
-      "1x Unit SUPERSENTER DIVE X",
-      "1x Tali Pengaman Pergelangan Tangan (Wrist Lanyard)",
-      "2x Cadangan O-Ring Kedap Air",
-      "1x Kabel Charger Cepat",
-      "1x Kotak Pelindung & Panduan"
-    ]
-  },
-  {
     id: "taffled-he08",
     slug: "taffled-he08",
     name: "TaffLED Senter Kepala LED COB 400 Lumens",
