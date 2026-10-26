@@ -86,6 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const priceOldEl = document.getElementById('productPriceOld');
   if (priceCurrentEl) priceCurrentEl.textContent = product.price;
   if (priceOldEl) priceOldEl.textContent = product.oldPrice || '';
+  const priceTagEl = document.querySelector('.detail-price-tag');
+  if (priceTagEl) priceTagEl.style.display = product.oldPrice ? '' : 'none';
 
   // Descriptions
   const shortDescEl = document.getElementById('productShortDesc');
