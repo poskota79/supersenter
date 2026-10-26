@@ -25,13 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
       featuredProduct: 'SUPERSENTER DIVE X',
       waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk aktivitas Diving / Bawah Air. Produk apa yang paling cocok?'
     },
-    'memancing': {
-      categoryName: 'Senter Memancing',
-      message: 'Senter Memancing menghadirkan daya tahan baterai panjang serta pencahayaan ramah pantulan air untuk memantau joran semalaman.',
-      recommendedSlug: 'senter-memancing',
-      recommendedUrl: 'senter-memancing.html',
-      featuredProduct: 'SUPERSENTER FISHER PRO',
-      waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk aktivitas Memancing Malam. Produk apa yang paling cocok?'
+    'tangan': {
+      categoryName: 'Senter Tangan (Handheld)',
+      message: 'Senter Tangan adalah senter genggam paling fleksibel: dari EDC harian isi ulang USB sampai taktis 4000 lumens dengan mode strobo dan SOS.',
+      recommendedSlug: 'senter-tangan',
+      recommendedUrl: 'senter-tangan.html',
+      waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter tangan. Produk apa yang paling cocok?'
     },
     'ultraviolet': {
       categoryName: 'Senter Ultraviolet (UV)',
