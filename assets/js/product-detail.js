@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!window.SUPERSENTER) return;
 
   const urlParams = new URLSearchParams(window.location.search);
-  const requestedSlug = urlParams.get('id') || 'supersenter-x1';
+  const requestedSlug = urlParams.get('id') || 'supersenter-dive-x';
 
   let product = window.SUPERSENTER.getProductBySlug(requestedSlug);
   if (!product) {

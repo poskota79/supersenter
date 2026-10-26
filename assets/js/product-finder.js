@@ -33,13 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
       featuredProduct: 'SUPERSENTER FISHER PRO',
       waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk aktivitas Memancing Malam. Produk apa yang paling cocok?'
     },
-    'jarak-jauh': {
-      categoryName: 'Senter Terang (High Power)',
-      message: 'Senter Terang bertenaga tinggi memberikan jangkauan sorotan ekstra jauh untuk patroli keamanan, pencarian, dan area terbuka luas.',
-      recommendedSlug: 'senter-terang',
-      recommendedUrl: 'senter-terang.html',
-      featuredProduct: 'SUPERSENTER X1',
-      waText: 'Halo SUPERSENTER, saya butuh senter dengan penerangan jarak jauh ekstra terang. Ada rekomendasi?'
+    'ultraviolet': {
+      categoryName: 'Senter Ultraviolet (UV)',
+      message: 'Senter ultraviolet mengungkap hal tak terlihat: cek keaslian uang dan dokumen, deteksi noda dan urin hewan, hingga berburu kalajengking di malam hari.',
+      recommendedSlug: 'senter-ultraviolet',
+      recommendedUrl: 'senter-ultraviolet.html',
+      waText: 'Halo SUPERSENTER, saya butuh senter ultraviolet untuk keperluan deteksi. Ada rekomendasi?'
     },
     'pekerjaan': {
       categoryName: 'Senter Kepala & Taktis',
@@ -49,11 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
       waText: 'Halo SUPERSENTER, saya butuh rekomendasi senter untuk kebutuhan pekerjaan malam / teknisi.'
     },
     'sehari-hari': {
-      categoryName: 'Senter Kompak Bertenaga',
+      categoryName: 'Senter Kepala (Headlamp)',
       message: 'Penerangan andal untuk kebutuhan rumah tangga, mati lampu, siaga di bagasi kendaraan, hingga jalan santai di malam hari.',
-      recommendedSlug: 'senter-terang',
-      recommendedUrl: 'senter-terang.html',
-      featuredProduct: 'SUPERSENTER X1',
+      recommendedSlug: 'senter-kepala',
+      recommendedUrl: 'senter-kepala.html',
       waText: 'Halo SUPERSENTER, saya butuh senter serbaguna untuk kebutuhan sehari-hari dan siaga di rumah/mobil.'
     }
   };
