@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'taffled-he08': '3x baterai AAA',
     'taffled-he25': '3x baterai AAA',
     'taffled-tangan-p50': '1x baterai 26650, 1x baterai 18650, atau 3x baterai AAA',
+    'taffled-tangan-p15': '1x baterai 18650',
     'taffled-uv-395-9led': '3x baterai AAA',
     'taffled-uv-t118': '1x baterai 18650 atau 3x baterai AAA',
     'taffled-w30': '3x baterai AAA',
