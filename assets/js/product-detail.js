@@ -161,7 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'taffled-tangan-p50': '1x baterai 26650, 1x baterai 18650, atau 3x baterai AAA',
     'taffled-uv-395-9led': '3x baterai AAA',
     'taffled-uv-t118': '1x baterai 18650 atau 3x baterai AAA',
-    'taffled-w30': '3x baterai AAA'
+    'taffled-w30': '3x baterai AAA',
+    'leliten-kepala-nf611': '1x baterai 18650',
   };
   const batteryNote = BATTERY_REQUIRED[product.slug];
   document.querySelectorAll('.battery-warning').forEach(el => el.remove());
