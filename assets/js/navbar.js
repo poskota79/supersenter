@@ -118,3 +118,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+/**
+ * Google Analytics 4 — supersenter.com (Measurement ID: G-KLBZ674NQM).
+ * Dimuat dari file bersama ini supaya semua halaman yang memakai navbar.js
+ * otomatis terlacak, tanpa mengedit puluhan halaman satu per satu.
+ */
+(function () {
+  if (window.__supersenterGaLoaded) return;
+  window.__supersenterGaLoaded = true;
+  var MEASUREMENT_ID = 'G-KLBZ674NQM';
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', MEASUREMENT_ID);
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + MEASUREMENT_ID;
+  document.head.appendChild(s);
+})();
