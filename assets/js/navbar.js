@@ -3,6 +3,49 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Tambah tautan Baterai & Charger (kategori 05) ke menu, disisipkan
+  // setelah Senter Tangan. Dijalankan dulu supaya tautan baru ikut
+  // mendapat handler tutup-drawer dan penanda aktif di bawah.
+  // Idempotent: tidak menambah dua kali bila tautan sudah ada.
+  const desktopAnchor = document.querySelector('.nav-menu a[href="senter-tangan.html"]');
+  if (desktopAnchor && !document.querySelector('.nav-menu a[href="baterai-charger.html"]')) {
+    const link = document.createElement('a');
+    link.href = 'baterai-charger.html';
+    link.className = 'nav-link';
+    link.textContent = 'Baterai & Charger';
+    desktopAnchor.insertAdjacentElement('afterend', link);
+  }
+  const mobileAnchor = document.querySelector('.mobile-nav-drawer a[href="senter-tangan.html"]');
+  if (mobileAnchor && !document.querySelector('.mobile-nav-drawer a[href="baterai-charger.html"]')) {
+    const link = document.createElement('a');
+    link.href = 'baterai-charger.html';
+    link.className = 'mobile-nav-link';
+    link.innerHTML = 'Baterai & Charger (Battery & Charger) <span>→</span>';
+    mobileAnchor.insertAdjacentElement('afterend', link);
+  }
+  document.querySelectorAll('.footer-links a[href="senter-tangan.html"]').forEach(anchor => {
+    const list = anchor.closest('li');
+    const container = list || anchor;
+    const scope = list ? list.parentElement : anchor.parentElement;
+    if (scope && !scope.querySelector('a[href="baterai-charger.html"]')) {
+      if (list) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = 'baterai-charger.html';
+        link.className = 'footer-link';
+        link.textContent = 'Baterai & Charger';
+        item.appendChild(link);
+        list.insertAdjacentElement('afterend', item);
+      } else {
+        const link = document.createElement('a');
+        link.href = 'baterai-charger.html';
+        link.className = 'footer-link';
+        link.textContent = 'Baterai & Charger';
+        anchor.insertAdjacentElement('afterend', link);
+      }
+    }
+  });
+
   const header = document.querySelector('.header-site');
   const mobileToggle = document.querySelector('.btn-mobile-toggle');
   const mobileDrawer = document.querySelector('.mobile-nav-drawer');
