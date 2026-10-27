@@ -839,3 +839,11 @@ button {
   }
 }
 
+
+/* Tombol WA navbar disembunyikan di desktop (permintaan user 27 Okt 2026);
+   di mobile tombol ini memang sudah disembunyikan oleh media query 768px. */
+@media (min-width: 769px) {
+  .nav-actions .btn-whatsapp {
+    display: none;
+  }
+}
