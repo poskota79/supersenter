@@ -218,7 +218,7 @@
 }
 .badge-popular {
   background-color: var(--badge-popular);
-  color: #FFFFFF;
+  color: #080A0D;
 }
 .badge-recommended {
   background-color: var(--badge-recommended);
@@ -226,7 +226,7 @@
 }
 .badge-new {
   background-color: var(--badge-new);
-  color: #FFFFFF;
+  color: #080A0D;
 }
 
 .product-card-thumb {
@@ -729,7 +729,7 @@
   align-items: center;
   gap: 0.65rem;
   background-color: var(--color-whatsapp);
-  color: #FFFFFF;
+  color: #080A0D;
   padding: 0.85rem 1.45rem;
   border-radius: var(--radius-full);
   font-weight: 800;
@@ -743,8 +743,8 @@
 .floating-wa-btn:hover {
   background-color: var(--color-whatsapp-hover);
   transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 30px rgba(37, 211, 102, 0.5);
-  color: #FFFFFF;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 230, 0, 0.5);
+  color: #080A0D;
 }
 
 .floating-wa-icon {
@@ -758,10 +758,10 @@
 
 @keyframes pulse-wa {
   0%, 100% {
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 15px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 230, 0, 0.35);
   }
   50% {
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6), 0 0 28px rgba(37, 211, 102, 0.6);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6), 0 0 28px rgba(255, 230, 0, 0.6);
   }
 }
 
