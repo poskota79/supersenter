@@ -76,3 +76,104 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCatalog(initialCat);
   }
 });
+/* SEO-Product-Injector v2: structured data produk + ItemList kategori.
+   - Halaman detail statis: Product (brand "Super Senter" sesuai spek,
+     sku dari nama file, harga, IDR, InStock, url kanonis).
+   - Halaman katalog/kategori: ItemList berisi Product tiap kartu.
+   - Google memproses JSON-LD yang disuntik lewat JavaScript.
+   - produk-detail.html dilewati (sudah noindex).
+   - Tambahan performa: loading lazy runtime untuk thumbnail galeri dan
+     kartu terkait di halaman detail. Tidak mengubah tampilan. */
+(function () {
+  function run() {
+    try {
+      var path = window.location.pathname.split('/').pop();
+      if (!path || path === 'produk-detail.html') return;
+      var canon = 'https://supersenter.com/' + path;
+      var titleEl = document.getElementById('productDetailTitle');
+      var priceEl = document.getElementById('productPriceCurrent');
+      if (titleEl && priceEl) {
+        var name = titleEl.textContent.trim();
+        var priceNum = priceEl.textContent.replace(/[^0-9]/g, '');
+        if (name && priceNum) {
+          var descMeta = document.querySelector('meta[name="description"]');
+          var desc = descMeta ? descMeta.getAttribute('content') : '';
+          desc = desc.replace(/ Beli langsung via WhatsApp.*$/, '')
+                     .replace(/ Beli via WhatsApp.*$/, '');
+          var sku = path.replace(/^produk-/, '').replace(/\.html$/, '');
+          var data = {
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            'name': name,
+            'description': desc,
+            'brand': { '@type': 'Brand', 'name': 'Super Senter' },
+            'sku': sku,
+            'offers': {
+              '@type': 'Offer',
+              'price': priceNum,
+              'priceCurrency': 'IDR',
+              'availability': 'https://schema.org/InStock',
+              'url': canon
+            }
+          };
+          var s = document.createElement('script');
+          s.type = 'application/ld+json';
+          s.text = JSON.stringify(data);
+          document.head.appendChild(s);
+          var link = document.createElement('link');
+          link.rel = 'canonical';
+          link.href = canon;
+          document.head.appendChild(link);
+        }
+        document.querySelectorAll('.gallery-thumb-btn img, .product-card img').forEach(function (img) {
+          if (!img.getAttribute('loading')) img.setAttribute('loading', 'lazy');
+        });
+        return;
+      }
+      var cards = document.querySelectorAll('.product-card');
+      if (cards.length) {
+        var items = [];
+        cards.forEach(function (card, i) {
+          var a = card.querySelector('.product-card-title a');
+          var p = card.querySelector('.product-card-price');
+          if (!a || !p) return;
+          var pr = p.textContent.replace(/[^0-9]/g, '');
+          if (!pr) return;
+          var href = a.getAttribute('href') || '';
+          items.push({
+            '@type': 'ListItem',
+            'position': items.length + 1,
+            'item': {
+              '@type': 'Product',
+              'name': a.textContent.trim(),
+              'brand': { '@type': 'Brand', 'name': 'Super Senter' },
+              'url': 'https://supersenter.com/' + href,
+              'offers': {
+                '@type': 'Offer',
+                'price': pr,
+                'priceCurrency': 'IDR',
+                'availability': 'https://schema.org/InStock',
+                'url': 'https://supersenter.com/' + href
+              }
+            }
+          });
+        });
+        if (items.length) {
+          var s2 = document.createElement('script');
+          s2.type = 'application/ld+json';
+          s2.text = JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            'itemListElement': items
+          });
+          document.head.appendChild(s2);
+        }
+      }
+    } catch (e) { /* SEO tambahan: jangan ganggu halaman */ }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
