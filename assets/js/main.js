@@ -177,3 +177,17 @@ document.addEventListener('DOMContentLoaded', () => {
     run();
   }
 })();
+
+/* Favicon-Injector: pasang <link rel="icon"> di semua halaman yang memuat
+   main.js (tab browser). Beranda + halaman utama punya link statis sendiri;
+   blok ini hanya mengisi halaman yang belum punya link icon. Tidak mengubah
+   tampilan halaman. */
+(function () {
+  if (!document.querySelector('link[rel="icon"]')) {
+    var l = document.createElement('link');
+    l.rel = 'icon';
+    l.type = 'image/svg+xml';
+    l.href = '/favicon.svg';
+    document.head.appendChild(l);
+  }
+})();
