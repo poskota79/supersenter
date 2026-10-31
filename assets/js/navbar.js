@@ -4,10 +4,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Tambah tautan Baterai & Charger (kategori 05) ke menu, disisipkan
-  // setelah Senter Tangan. Dijalankan dulu supaya tautan baru ikut
+  // setelah Senter Ultraviolet. Dijalankan dulu supaya tautan baru ikut
   // mendapat handler tutup-drawer dan penanda aktif di bawah.
   // Idempotent: tidak menambah dua kali bila tautan sudah ada.
-  const desktopAnchor = document.querySelector('.nav-menu a[href="senter-tangan.html"]');
+  const desktopAnchor = document.querySelector('.nav-menu a[href="senter-ultraviolet.html"]');
   if (desktopAnchor && !document.querySelector('.nav-menu a[href="baterai-charger.html"]')) {
     const link = document.createElement('a');
     link.href = 'baterai-charger.html';
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.textContent = 'Baterai & Charger';
     desktopAnchor.insertAdjacentElement('afterend', link);
   }
-  const mobileAnchor = document.querySelector('.mobile-nav-drawer a[href="senter-tangan.html"]');
+  const mobileAnchor = document.querySelector('.mobile-nav-drawer a[href="senter-ultraviolet.html"]');
   if (mobileAnchor && !document.querySelector('.mobile-nav-drawer a[href="baterai-charger.html"]')) {
     const link = document.createElement('a');
     link.href = 'baterai-charger.html';
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.innerHTML = 'Baterai & Charger (Battery & Charger) <span>→</span>';
     mobileAnchor.insertAdjacentElement('afterend', link);
   }
-  document.querySelectorAll('.footer-links a[href="senter-tangan.html"]').forEach(anchor => {
+  document.querySelectorAll('.footer-links a[href="senter-ultraviolet.html"]').forEach(anchor => {
     const list = anchor.closest('li');
     const container = list || anchor;
     const scope = list ? list.parentElement : anchor.parentElement;
