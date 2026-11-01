@@ -546,4 +546,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://supersenter.com/panduan-memilih-lampu-senter.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://supersenter.com/panduan-memilih-senter-kepala.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
